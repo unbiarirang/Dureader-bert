@@ -2,11 +2,25 @@
 
 2019 DuReader 机器阅读理解模型。
 
-reference code: [Dureader-Bert](https://github.com/basketballandlearn/Dureader-Bert)
+base code: [Dureader-Bert](https://github.com/basketballandlearn/Dureader-Bert)
 
 预训练模型下载: [BERT-base-chinese](https://github.com/google-research/bert), [wwm & wwm-ext]( https://github.com/ymcui/Chinese-BERT-wwm)
 
 DuReader数据下载: [DuReader_v2.0_preprocessed.zip](http://ai.baidu.com/broad/download?dataset=dureader)
+## Summary
+	48.89 Baseline
+	49.65 (+0.76) Hyperparameter optimization
+	50.01 (+0.36) Paragraph selection – general BERT QP classification model
+	50.27 (+0.26) Paragraph selection – fine-tuning BERT QP classification model
+	50.55 (+0.28) Sample selection – use full range of match scores
+	50.89 (+0.34) Improved pre-training – wwm-ext
+	51.46 (+0.57) Model Improvement 
+	51.5 (+0.04) Data Augmentation – CMRC and DRCD
+	51.57 (+0.07) Data Augmentation – synonym word replacement
+	51.78 (+0.21) Ensemble
+	Single: ROUGE-L 51.57, BLEU-4: 48.7
+    Ensemble: ROUGE-L 51.78, BLEU-4: 48.37
+
 
 ## Code
 
